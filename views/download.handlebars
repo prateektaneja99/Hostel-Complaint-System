@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+     <title>Personal Information</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+
+    @font-face { font-family: earth; src: url('earthorbiter.TTF'); }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            margin:0;
+            height: 758px;
+            background: #fff;
+            /*background-color: #7eaefc;*/
+            background-repeat:no-repeat;
+        }
+
+       div.tnav  a.active {
+         color: white;
+            background-color:grey;
+        }
+        .tnav {
+          overflow: hidden;
+          border: 2px solid #D3D3D3;
+          background-color: transparent;
+          width: 100%;
+          height: 45px;
+       }
+        
+        .tnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .tnav p{
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            font-family: sans-serif;
+            padding:  6px 6px 6px 32px;
+        }
+
+       .tnav a:hover {
+            color: white;
+            background-color:#8308c6;
+         }
+         .head{
+            overflow: hidden;
+            background-color: #8308c6;
+            width: 100%;
+            height: 70px;
+         }
+
+         .head p{
+
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-family: earth;
+            padding-bottom: 10px;
+            font-size: 27px;
+
+         }
+
+         .second{
+            overflow: hidden;
+            background-color: #8308c6;
+            width: 100%;
+            height: 330px;
+         }
+
+          .second p{
+
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 16px;
+
+         }
+
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    height: 60px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 500px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item4 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.Summary{
+width: 40px;
+height: 100px;
+}
+
+
+    .button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    height: 50px;
+    width: 300px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 250px 550px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    }
+
+    .button3 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding:10px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    }
+
+
+.button2 {
+    background-color: #8308c6; /* purple */
+    border: none;
+    color: white;
+    height: 40px;
+    width: 80px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+
+.button1:hover {    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button3:hover {    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+div.one{
+    float: left;
+}
+
+.field{
+
+}
+.field input{
+width: 1280px;
+border: 0px solid white; 
+border-bottom: 1px solid lightgrey;
+
+}
+
+#field input[type='text'] {
+    background-position: 7px 7px;
+    width: 5px;
+    height: 10px;
+    margin: 50px;
+}
+
+/*.field image{
+	margin-top: 15px;
+}*/
+
+     
+    </style>
+    <body>
+
+    <div class="head">
+
+    <p>RESUME BUILDER</p>
+
+        
+    </div>
+        <div class="tnav">
+            <a href="home"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+            <a  href="summary"><i class="fa fa-user"></i>&nbsp;&nbsp;Summary</a>
+            <a  href="personal"><i class="fa fa-book"></i>&nbsp;&nbsp;Personal Info</a>
+            <a href="experience"><i class="fa fa-fire"></i>&nbsp;&nbsp;Experience</a>
+            <a href="projects"><i class="fa fa-user"></i>&nbsp;&nbsp;Projects</a>
+            <a href="education"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Education</a>
+            <a href="skills"><i class="fa fa-user"></i>&nbsp;&nbsp;Skills</a>
+            <a class="active" href="download"><i class="fa fa-book"></i>&nbsp;&nbsp;Download</a>
+        </div>
+
+       
+      <!--  <p style="margin-top: 190px; margin-left:  480px;">Please Add some information of yours and check back later.</p>
+
+        <button style="margin-top: 20px; margin-left:  530px;" class="button1 " onclick="window.location.href='home.html'">Start Building Your Resume &nbsp;&nbsp; <i class="fa fa-user"></i> </button> -->
+
+        <img src="resume1.png" width="300" height="500"  border=2 style="margin-left : 25px;  margin-top:25px;">
+        <img src="resume2.png" width="300" height="500"  border=2  style="margin-left : 180px; margin-top:25px;">
+        <img src="resume3.png" width="300" height="500"  border=2  style="margin-left : 180px; margin-top:25px;">
+
+        <br><br>
+
+        <div class="one">
+        <form action="/view1" method="POST">
+            <input type="text" id="email1" name="email1" value="" style="display: none">
+            <button type="submit" class="button3" onclick="check()" style="margin-left: 115px;">Template 1</button>
+        </form>
+        </div>
+
+        <div class="one">
+        <form action="/view2" method="POST">
+            <input type="text" id="email2" name="email2" value="" style="display: none">
+            <button type="submit" class="button3" onclick="check()" style="margin-left: 400px;" >Template 2</button>
+        </form>
+        </div>
+        <div class="one">
+        <form action="/view3" method="POST">
+            <input type="text" id="email3" name="email3" value="" style="display: none">
+            <button type="submit" class="button3" onclick="check()" style="margin-left: 400px;" >Template 3</button>
+        </form>
+        </div>
+        <br><br>
+        <br><br>
+        <script>
+            function check(){
+                document.getElementById("email1").value = localStorage.getItem("email");
+                document.getElementById("email2").value = localStorage.getItem("email");
+                document.getElementById("email3").value = localStorage.getItem("email");
+            }
+        </script>
+
+      
+        
+       
+    </body>
+</html>

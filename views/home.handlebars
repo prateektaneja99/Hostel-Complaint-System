@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+     <title>Home</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+
+    @font-face { font-family: earth; src: url('earthorbiter.TTF'); }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            margin:0;
+            height: 758px;
+            background: #fff;
+            /*background-color: #7eaefc;*/
+            background-repeat:no-repeat;
+        }
+
+        div.tnav  a.active {
+         color: white;
+            background-color:grey;
+        }
+
+
+        .tnav {
+          overflow: hidden;
+          background-color: transparent;
+          width: 100%;
+          height: 45px;
+       }
+        
+        .tnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .tnav p{
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            font-family: sans-serif;
+            padding:  6px 6px 6px 32px;
+        }
+
+       .tnav a:hover {
+            color: white;
+            background-color:#8308c6;
+         }
+         .head{
+            overflow: hidden;
+            background-color: #8308c6;
+            width: 100%;
+            height: 70px;
+         }
+
+         .head p{
+
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-family: earth;
+            padding-bottom: 10px;
+            font-size: 27px;
+
+         }
+
+         .second{
+            overflow: hidden;
+            background-color: #8308c6;
+            width: 100%;
+            height: 330px;
+         }
+
+          .second p{
+
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 16px;
+
+         }
+
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    height: 60px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 500px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item4 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.Summary{
+width: 40px;
+height: 100px;
+}    
+    </style>
+    <body>
+
+    <div class="head">
+
+    <p>RESUME BUILDER</p>
+
+        
+    </div>
+        <div class="tnav">
+            <a class="active" href="home"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+            <a href="summary"><i class="fa fa-user"></i>&nbsp;&nbsp;Summary</a>
+            <a href="personal"><i class="fa fa-book"></i>&nbsp;&nbsp;Personal Info</a>
+            <a href="experience"><i class="fa fa-fire"></i>&nbsp;&nbsp;Experience</a>
+            <a href="projects"><i class="fa fa-user"></i>&nbsp;&nbsp;Projects</a>
+            <a href="education"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Education</a>
+            <a href="skills"><i class="fa fa-user"></i>&nbsp;&nbsp;Skills</a>
+            <a href="download"><i class="fa fa-book"></i>&nbsp;&nbsp;Download</a>
+
+
+        </div>
+        <div class="second">
+        <p>Welcome to Résumé Nation. Your one stop shop to create all the beautiful </p>
+        <p>Résumés. Building a Résumé should be fun, simple and intuitive. Résumé Nation </p>
+        <p>tries to give that overall experience. Fill in the required information like your </p>
+        <p>personal info, work experience, education, skills, choose the style of the Résumé </p>
+        <p>you want and voilà! you'll have your beautiful Résumé as an end product. Try </p>
+        <p>yourself!</p>
+        <p></p>
+        <button class="button "  onclick="window.location.href='summary'">Start Building Your Resume now &nbsp; &nbsp;<i class="fa fa-user"></i></button>
+        </div>
+
+        <br><br><br>
+
+        <div class="grid-container">
+        <div><img src="detail.png" width="130px" height="70px"><br><p style="font-size:18px; font-weight:bold; color:grey;">Fill in required Details.</p></div>
+        <div><img src="change.png" width="130px" height="70px"><br><p style="font-size:18px; font-weight:bold; color:grey;">Review All your changes.</p></div>
+        <div><img src="resume.png" width="130px" height="70px"><br><p style="font-size:18px; font-weight:bold; color:grey;">Download your generated Resume.</p></div>  
+        
+        
+        </div>
+
+        
+        
+       
+    </body>
+</html>

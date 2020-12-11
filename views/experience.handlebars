@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+     <title>Personal Information</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+
+    @font-face { font-family: earth; src: url('earthorbiter.TTF'); }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            margin:0;
+            height: 758px;
+            background: #fff;
+            /*background-color: #7eaefc;*/
+            background-repeat:no-repeat;
+        }
+
+        div.tnav  a.active {
+          color: white;
+            background-color:grey;
+        }
+        .tnav {
+          overflow: hidden;
+          border: 2px solid #D3D3D3;
+          background-color: transparent;
+          width: 100%;
+          height: 45px;
+       }
+        
+        .tnav a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .tnav p{
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            font-family: sans-serif;
+            padding:  6px 6px 6px 32px;
+        }
+
+       .tnav a:hover {
+            color: white;
+           background-color:#8308c6;
+         }
+         .head{
+            overflow: hidden;
+            background-color: #8308c6;
+            width: 100%;
+            height: 70px;
+         }
+
+         .head p{
+
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-family: earth;
+            padding-bottom: 10px;
+            font-size: 27px;
+
+         }
+
+         .second{
+            overflow: hidden;
+            background-color: #8308c6;
+            width: 100%;
+            height: 330px;
+         }
+
+          .second p{
+
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 16px;
+
+         }
+
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    height: 60px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 500px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item4 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+.Summary{
+width: 40px;
+height: 100px;
+}
+
+
+    .button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    height: 40px;
+    width: 80px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    }
+
+.button2 {
+    background-color: #8308c6; /* purple */
+    border: none;
+    color: white;
+    height: 40px;
+    width: 80px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+
+
+.button1:hover {    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.field{
+
+}
+.field input{
+width: 1280px;
+border: 0px solid white; 
+border-bottom: 1px solid lightgrey;
+
+}
+
+#field input[type='text'] {
+    background-position: 7px 7px;
+    width: 5px;
+    height: 10px;
+    margin: 50px;
+}
+
+/*.field image{
+	margin-top: 15px;
+}*/
+
+     
+    </style>
+    <body>
+
+    <div class="head">
+
+    <p>RESUME BUILDER</p>
+
+        
+    </div>
+        <div class="tnav">
+            <a href="home"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+            <a href="summary"><i class="fa fa-user"></i>&nbsp;&nbsp;Summary</a>
+            <a href="personal"><i class="fa fa-book"></i>&nbsp;&nbsp;Personal Info</a>
+            <a class="active" href="experience"><i class="fa fa-fire"></i>&nbsp;&nbsp;Experience</a>
+            <a href="projects"><i class="fa fa-user"></i>&nbsp;&nbsp;Projects</a>
+            <a href="education"><i class="fa fa-envelope"></i>&nbsp;&nbsp;Education</a>
+            <a href="skills"><i class="fa fa-user"></i>&nbsp;&nbsp;Skills</a>
+            <a href="download"><i class="fa fa-book"></i>&nbsp;&nbsp;Download</a>
+        </div>
+
+        
+        <!-- <img src="user.png" width="30px" height="30px"> -->
+      
+
+        <form action="/projects" method="GET">
+      	<input type="text"  id="company" name="company" placeholder="Company Name ex. ( Amazon )" style="margin: 15px; padding: 12px; width: 1280px; border-top: 0px solid black; border-left: 0px solid black;  border-right: 0px solid black;  border-bottom: 1px solid grey; ">
+       	<input type="text"  id="time" name="time" placeholder="Time Period ex. ( July-2016 Dec-2017 )" style="margin: 15px; padding: 12px; width: 1280px; border-top: 0px solid black; border-left: 0px solid black;  border-right: 0px solid black;  border-bottom: 1px solid grey;">
+       	<input type="text"  id="role" name="role" placeholder="Role ex. ( Software Engineer )" style="margin: 15px; padding: 12px; width: 1280px; border-top: 0px solid black; border-left: 0px solid black;  border-right: 0px solid black;  border-bottom: 1px solid grey;">
+       	<textarea  name="summary"  id="summary" class= "text" rows="13" cols="185" placeholder="Summary of your job responsibilities." style="margin: 15px; padding: 12px; width: 1280px; border-top: 0px solid black; border-left: 0px solid black;  border-right: 0px solid black;  border-bottom: 1px solid grey;"></textarea>
+      
+        <button class="button1 " onclick="save();">Save </button>
+        <button class="button2 ">Next </button>
+
+        </form>
+        
+        <script type="text/javascript">
+          
+          function save(){
+            var e= document.getElementById('company').value;
+            var f= document.getElementById('time').value;
+            var g= document.getElementById('role').value;
+            var h= document.getElementById('summary').value;
+            localStorage.setItem("company", e);
+            localStorage.setItem("time", f);
+            localStorage.setItem("role", g);
+            localStorage.setItem("summary", h);
+
+          }
+        </script>
+               
+    </body>
+</html>

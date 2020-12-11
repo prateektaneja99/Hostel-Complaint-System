@@ -1,0 +1,402 @@
+<!DOCTYPE html >
+<head>
+<title>Your Resume</title>
+</head>
+<body>
+  <style>
+    body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: white;
+	font-size:13pt;
+	line-height: 17pt;
+}
+
+.clear {
+	clear:both;
+}
+
+a, a:hover, a:visited, a:active {
+	color:#7d6a6c;
+	text-decoration: none;
+}
+
+#wrapper, .wrapper-mid {
+	background: none;
+	
+}
+
+.wrapper-top, .wrapper-bottom  {
+	display:none;
+}
+
+#paper {
+	width:820px;
+	margin:0 auto;
+	border-bottom-color: black;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.paper-top, .paper-bottom {
+	display:none;
+}
+
+#paper-mid {
+	width:820px;
+	margin:0 auto;
+	background-color:#FFF;
+	display:block;
+	padding:0;
+	overflow: hidden;
+	padding-bottom:75px;
+	padding-top:7px;
+}
+
+.entry {
+	width:820px;
+	display: block;
+	padding-top:25px;
+	clear: both;
+	margin-left:20px;
+}
+
+h1 {
+	width:500px;
+	font-size:42pt;
+	color:#51383b;
+	margin-bottom:0;
+}
+
+h1 span {
+	font-size:21pt;
+	display:block;
+	margin-left:15px;
+	margin-top:20px;
+	color:#51383b;
+}
+
+h2 {
+	width:180px;
+	height: 23px;
+	text-align: right;
+	float:left;
+	padding:0;
+	margin:0;
+	clear:both;
+	font-size:22pt;
+	margin-bottom:-12px;
+	color:#51383b;
+}
+
+p {
+	width:600px;
+	margin-left:40px;
+	float:right;
+}
+
+ul.list {
+	clear: both;
+	padding:0;
+	margin:0;
+	overflow: hidden;
+}
+
+ul.list li {
+	display:block;
+	float:right;
+	padding-top:32px;
+}
+
+
+h3 {
+	width:180px;
+	text-align: right;
+	float:left;
+	padding:0;
+	clear:both;
+	font-size: 13pt;
+	color:black;
+}
+
+em {
+	font-family: Georgia, "Times New Roman", serif;
+	font-style: italic;
+	color:#999;
+	font-size:12pt;
+	display: block;
+	padding-top:0;
+}
+
+ul.info {
+	float:right;
+	width:600px;
+	margin-left:40px;
+	background: none;
+	list-style: square;
+	
+}
+
+ul.info li {
+	margin:0;
+	padding:0;
+	float:left;
+	display: block;
+	width:600px;
+	padding-left:0;
+	background-position: 0 .5em;
+	margin-top:12px;
+	list-style-type: square;
+}
+
+ul.skills {
+	margin:0;
+	padding:0;
+	float:right;
+	width:600px;
+	margin-left:40px;
+	margin-top:-6px;
+	background: none;
+	list-style: square;
+}
+
+ul.skills li {
+	margin:0;
+	padding:0;
+	float:left;
+	width:176px;
+	padding-left:0;
+	background-position: 0 .5em;
+	margin-top:6px;
+}
+
+
+
+.self {
+	width:500px;
+	float:left;
+	padding-top:11px;
+	margin-left:0;
+	margin-bottom:15px;
+	margin-left:38px;
+}
+
+.self ul {
+	padding-top: 10px;
+}
+
+.self ul li {
+	background-repeat: no-repeat;
+	padding-left:0;
+	background-position: 0 .1em;
+	height:25px;
+	display:block;
+	margin-top:-2px;
+}
+
+.social {
+	display:none;
+}
+
+/* ELEMENTS */
+/* ----------------------------------------- */
+
+table {
+	width: 590px;
+	margin-left:40px;
+	float:right;
+	border-collapse: collapse;
+	border-bottom:1px dashed #999;
+	border-top:1px dashed #999;
+}
+
+table td {
+	padding: 10px;
+	padding-top:0;
+	border-right:1px dashed #999;
+}
+
+table td:hover {
+	background-color: #f2f2f2;
+}
+
+table th {
+	padding: 10px;
+	padding-top:0;
+	color:#7d6a6c;
+	text-align: left;
+	border-right:1px dashed #999;
+}
+
+table td.center {
+	text-align: center;
+}
+
+table td.last {
+	background: none;
+}
+
+table th.center {
+	text-align: center;
+}
+
+table th.last {
+	background: none;
+}
+
+table tr {
+	border-left:1px dashed #999;
+	border-top:1px dashed #999;
+}
+
+table tr.caption {
+	border-left:1px dashed #999;
+}
+
+blockquote {
+	border-left:3px solid #7d6a6c;
+	padding-left:8px;
+	margin-top:20px;
+	width:585px;
+	margin-left:40px;
+	float:right;
+}
+
+pre {
+	width:500px;
+	margin-left:40px;
+	float:right;
+}
+
+abbr, acronym {
+	border-bottom:1px dashed #7d6a6c;
+}
+
+strong {
+	font-weight: bold;
+}
+
+small {
+	font-size:70%;
+}
+
+big {
+	font-size:1.2em;
+}
+
+/* GO TO TOP */
+/* ----------------------------------------- */
+
+#message {
+	display:none;
+}
+
+.works {
+	display:none;
+}
+
+li.mail {
+	font-size: 25px;
+	opacity: .6;
+}
+li.tel {
+	font-size: 23px;
+	opacity: .6;
+}
+li.web {
+	font-size: 23px;
+	opacity: .6;
+}
+
+
+    </style>
+
+    {{#each requests}}
+    <div id="paper">
+      <div id="paper-mid">
+        <div class="entry">
+          <div class="self">
+            <h1 class="name" id="h_name" name="h_name">{{name}}<br />
+            <ul>
+              <li class="mail" id="mail" name="mail">{{email}}</li><br>
+              <li class="tel" id="phno" name="phno">{{phone}}</li>
+              <li class="web" id="web" name="web">{{website}}</li> 
+            </ul>
+          </div>
+        </div>
+        
+        
+        <div class="entry" >
+          <h2>OBJECTIVE</h2>
+        
+          <p id="summary" name="summary">{{summary}}</p>
+        </div>
+        
+        <div class="entry">
+          <h2>EDUCATION</h2>
+          <div class="content">
+            <h3 id="col_time" name="col_time">{{duration}}</h3>
+            <p id="college_name" name="college_name">{{college}}
+              <br >
+              <em id="qualif" name="qualif">{{degree}}</em></p>
+          </div>
+          {{!-- <div class="content">
+            <h3 id="sch_time" name="sch_time">Sep 2001 - Jun 2005</h3>
+            <p id="School_name" name="school_name">University of Art &amp; Design, New York <br />
+              <em id="qualif" name="sch_qualif">Bachelor of Science in Graphic Design</em></p>
+          </div> --}}
+        </div>
+        <br>
+        
+        <div class="entry">
+          <h2>EXPERIENCE</h2>
+          <div class="content">
+            <h3>{{time}}</h3>
+            <p id="c_name" name="c_name">{{company_name}}<br />
+              <em id="j_name" name="j_name">{{role}}</em>
+            
+              <em id="j_summary" name="j_summary" style="color: black;">{{company_summary}}</em>
+            </p>
+          </div>
+          
+        </div>
+        
+        <div class="entry">
+          <h2>SKILLS</h2>
+          <div class="content">
+             <p id="skill" name="skill">{{skills}}</p>
+          </div>
+        </div>
+
+       <div class="entry">
+          <h2>WORKS</h2>
+          <div class="content">
+            <br><br>
+            <h3 style="margin-top: 10px;" id="proj_name1" name="proj_name1">{{project_name}}</h3>
+             <p  style="margin-top: 10px;" id="proj_detail1" name="proj_detail1">{{project_description}}</p>
+             <p  style="margin-top: 10px;" id="proj_detail1" name="proj_detail1">{{project_website}}</p>
+          {{!-- <h3 style="margin-top: 0px;" id="proj_name2" name="proj_name2">Project Name1</h3>
+             <p  style="margin-top: 0px;" id="proj_detail2" name="proj_detail2">Proj details</p><br> --}}
+             {{/each}}
+          
+        
+          </div>
+        </div>
+        
+        	
+        </div>
+        <!-- Begin 5th Row -->
+      </div>
+      <div class="clear"></div>
+      <div class="paper-bottom"></div>
+    </div>
+    <!-- End Paper -->
+  </div>
+  <div class="wrapper-bottom"></div>
+</div>
+<div id="message"><a href="#top" id="top-link">Go to Top</a></div>
+<!-- End Wrapper -->
+{{!-- <form action="/view3" method="POST">
+    <button type= "submit">View the form</button>
+    </form> --}}
+</body>
+</html>
